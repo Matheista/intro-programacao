@@ -1,0 +1,13 @@
+Exercicios 
+"Construa um algoritmo que compute o resultado e resto da divisão entre
+dois números."
+
+R:
+
+Passo 1- Adicione o valor do dividendendo em "a"
+
+a = [primeira entrada do usuario]
+
+ir Passo 2>>
+
+Passo 2 - Adicione o valor do diviosr em "b"
