@@ -115,35 +115,45 @@ arq=100
 Setor=str.lower(input("Qual Setor deseja?""\n>Vip""\n>Cadeira""\n>Arquibancada""\n>>"))
 TipoIngresso=str.lower(input("Meia ou Inteira: "))
 
-if Setor == "vip":
-    valor=vip + (vip * (5/100))
-    print("R$ %.2f" % valor)
 
+if TipoIngresso=="inteira":
+    if Setor == "vip":
+        taxa=vip + (vip * (5/100))
+        print("R$ %.2f" % taxa)
+    elif Setor == "cadeira":        
+        Setor=cad
+        taxa=cad + (cad * (5/100))
+        print("R$ %.2f" % taxa)
+
+    elif Setor == "arquibancada":        
+        Setor=arq
+        taxa=arq + (arq * (5/100))
+        print("R$ %.2f" % taxa)
+    else:
+         print("Setor inválido")
+         
+             
 
 elif TipoIngresso=="meia":
-    if  Setor == "cadeira" :
-        Setor=cad
-        Valor=(float(Setor)/2)
-        print(Valor+(Valor*(5/100)))
-
-    elif TipoIngresso=="meia"and Setor == "arquibancada" :
-        Setor=arq
-        Valor=(float(Setor)/2)
-        print(Valor+(Valor*(5/100)))
-
-    else:
-        Valor=float(Setor)
-        print(Valor+(Valor*(5/100)))
+    if Setor == "vip":
+         print("Tipo de ingresso inválido")
         
-    
+    elif Setor == "cadeira":
+        Setor=cad
+        meia=(float(Setor)/2)
+        taxa=meia+(cad*(5/100))
+        print("R$ %.2f" % taxa)
+    elif  Setor == "arquibancada":
+        Setor=arq
+        meia=(float(Setor)/2)
+        taxa=meia+(arq*(5/100))
+        print("R$ %.2f" % taxa)
+    else:
+        print("Setor inválido")
+
+
 else:
     print("Tipo de ingresso inválido")
-
-
-
-
-
-
 
 
 
