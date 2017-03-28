@@ -8,7 +8,7 @@ while i == "sim":
         produto=n1*n2
         print(produto)
     else:
-        media=(n1+n2/2)
+        media=((n1+n2)/2)
         print(media)
     i = str.lower(input("Gostaria de fazer uma nova execução? (sim ou não)"))
     
