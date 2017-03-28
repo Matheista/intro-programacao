@@ -10,6 +10,7 @@ while i == "sim":
     else:
         media=((n1+n2)/2)
         print(media)
+
     i = str.lower(input("Gostaria de fazer uma nova execução? (sim ou não)"))
     
        
